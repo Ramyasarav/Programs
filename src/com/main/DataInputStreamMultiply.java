@@ -14,14 +14,21 @@ public class DataInputStreamMultiply {
 	}
 	
 	void readAndMultiply() throws IOException{
-		//InputStreamReader is = new InputStream(System.in);
-		DataInputStream dis = new DataInputStream(new ObjectInputStream(System.in));
-		ObjectInputStream ois = new ObjectInputStream(new DataInputStream(System.in));
-		
-		int f = ois.
-		//int g = dis.readInt();
-		System.out.println(f + "," );
-		//System.out.println("output multiply " + (f * g));
+	
+		   DataInputStream ds=new DataInputStream(System.in);
+		   try
+		   {
+		   System.out.println("Enter the first");
+		   int a=Integer.parseInt(ds.readLine());
+		   System.out.println("Enter the second");
+		   int b=Integer.parseInt(ds.readLine());
+		   int c=a*b;
+		   System.out.println("Product of the number is "+c);
+		   
+		   }catch (Exception e)
+		   {
+			   e.printStackTrace();
+		   }
 	}
 
 }

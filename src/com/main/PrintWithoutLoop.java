@@ -12,7 +12,7 @@ public class PrintWithoutLoop {
 	}
   public static void main(String args[])
   {
-	  int value=1;
+	  int value=5;
 	 PrintWithoutLoop.Pnt(value);
   }
 }

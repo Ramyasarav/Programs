@@ -1,4 +1,4 @@
-package com.main;
+package com.main.fileHandling;
 
 import java.io.DataInputStream;
 import java.io.IOException;
